@@ -4,18 +4,18 @@ If you'd like to download the code and give my drawing app a try, I believe the 
 If you are on windows, you only need to open the code in the folders called "draw-app-masterV2" and ".vscode." If you are on mac, you can open up the "__MACOSX/draw-app-masterV2" folder in VS code in place of the "draw-app-masterV2" folder.        
 The only thing in the ".vscode" folder is a json file that enables you to open the drawing app locally in chrome.      
 
-Below is an overview detailing the functionality of each file within "draw-app-masterV2," along with some identified shortcomings for each.      
+Below is an overview detailing the functionality of each file within "draw-app-masterV2," along with some identified shortcomings for each.        
 sketch.js:     
-  Description --> 
-  Shortcomings -->
+  Description --> Creation of the canvas and the setup of toolbox, colorpalette, and the helperfunctions objects, as well as all the tool objects                      
+  Shortcomings --> This file comes first in index.html, so every file after this one cannot access anything in the functions within this file                     
 
 toolbox.js:     
-  Description --> 
-  Shortcomings -->
+  Description --> Creation of the tool images on the left side of the app. Responsible for tracking which tool is selected and showing a blue square around the tool image when it is selected             
+  Shortcomings --> Small number of tools
 
 colourPalette.js:      
-  Description --> 
-  Shortcomings -->
+  Description --> Creation of the colors seen in the bottom left corner of the app         
+  Shortcomings --> Limited number of colors         
 
 helperFunctions.js:      
   Description --> 
@@ -26,8 +26,8 @@ freehandTool.js:
   Shortcomings -->
 
 lineToTool.js:      
-  Description --> 
-  Shortcomings -->
+  Description --> Can be used to draw only straight lines        
+  Shortcomings --> Basic         
 
 sprayCanTool.js:      
   Description --> 
